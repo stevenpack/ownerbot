@@ -1,0 +1,18 @@
+{
+    "services": [       
+        {
+            "name": "Jira",
+            "owner": "Dev Tools",
+            "room": "DevTools",
+            "url": "https://chat.google.com/room/xxx",
+            "aliases": ["Bitbucket"]
+        },
+        {
+            "name": "NinjaPanel",
+            "owner": "Internal Tools",
+            "room": "Internal Tools",
+            "url": "https://chat.google.com/room/yyy",
+            "aliases": ["np"]
+        }
+    ]
+}

@@ -1,0 +1,23 @@
+{
+    "name": "ownerbot",
+    "version": "0.0.1",
+    "description": "Cloudflare worker that answers questions about system ownership",
+    "main": "ownerbot.js",
+    "scripts": {
+        "build": "parcel build ownerbot.js --target node --bundle-node-modules",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "release": "yarn build && serverless deploy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "ssh://git@bitbucket.cfdata.org:7999/~spack/ownerbot.git"
+    },
+    "author": "Steven Pack",
+    "license": "MIT",
+    "devDependencies": {
+        "parcel-bundler": "^1.12.2",
+        "parcel": "^1.12.3",
+        "serverless": "^1.41.0",
+        "serverless-cloudflare-workers": "^1.1.0"
+    }
+}

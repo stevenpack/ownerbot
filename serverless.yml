@@ -1,0 +1,20 @@
+service:
+    name: ownerbot
+    config:
+      accountId: ${env:CLOUDFLARE_ACCOUNT_ID} 
+      zoneId: ${env:CLOUDFLARE_ZONE_ID} 
+
+provider:
+  name: cloudflare
+  stage: ${env:CLOUDFLARE_STAGE}
+
+plugins:
+  - serverless-cloudflare-workers
+
+functions:
+  gateway:
+    worker: runtime
+    script: dist/ownerbot
+    events:
+      - http:
+          url: pacman.wiki/bots/ownerbot/*
