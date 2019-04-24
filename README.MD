@@ -11,13 +11,10 @@ Person: "@ownerbot jira"
 Ownwerbot: "Dev Tools owns Jira. here is their room: http://...
 
 # Tech
-Uses Worers and Workers KV.
+Uses Workers and Workers KV.
 
 # Functionality
 Supports adding, deleting, querying, exporting and providing help.
-
-# TODO
-See todo.txt
 
 # Getting started
 
